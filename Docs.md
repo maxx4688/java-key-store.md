@@ -9,9 +9,9 @@ The registration - Just a simple sentence without any addition
 3. The third line.
 4. Just like this you can add multiple lines of texts like a bulletlist
 
-# Let's see an example
+# Let's see an example  
+**Note-1** : The `Text` and `text1` with default text can be also used respectively.
 - This is just a normal sentence started with a hyphon to mark as bulletlist **This with two stars start & end**(http status code: 400):
-- 
 
 ## View Work Categories
 
