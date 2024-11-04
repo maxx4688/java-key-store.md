@@ -10,6 +10,8 @@ The registration - Just a simple sentence without any addition
 4. Just like this you can add multiple lines of texts like a bulletlist
 
 # Let's see an example
+- This is just a normal sentence started with a hyphon to mark as bulletlist **This with two stars start & end**(http status code: 400):
+- 
 
 ## View Work Categories
 
