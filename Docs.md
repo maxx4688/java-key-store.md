@@ -13,15 +13,15 @@ The registration - Just a simple sentence without any addition
 **Note-1** : The `Text` and `text1` with default text can be also used respectively.
 - This is just a normal sentence started with a hyphon to mark as bulletlist **This with two stars start & end**(http status code: 400):
 
-## View Work Categories
+## Title - a syntax presentation docs.
 
-- Request Method: `GET`
-- Request URL: `auth/workCategory`
-- Response Body:
+- Methods: `this.method`
+- Request endPoint: `this.endPoint`
+- Res.body:
 
 ```json
 {
-  "workCategory": ["cat1", "cat2", "cat3", "cat4"]
+  "Method added": ["add1", "add2", "add3", "add4"]
 }
 ```
 # Let's try  another example
@@ -29,13 +29,13 @@ The registration - Just a simple sentence without any addition
 - with a hyfen this could be a bulletlist
 - And now you can easily define: `a text`
 
-- Just using the triplet of upper mark results simple format with white colour
+- Just using the backquote three times results simple format with white colour
 ```
 {
   "call": ["man", "horse", "Cat"]
 }
 ```
-- Whereas adding `json` after the upper mark results coloured snippet 
+- Whereas adding `any code format` after the backquote results coloured snippet of that same programming language.
 ```json
 {
   "call": ["man", "horse", "Cat"]
