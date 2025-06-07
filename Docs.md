@@ -11,14 +11,14 @@ keytool -list -v -keystore path to\upload-keystore.jks -alias upload
 - Make sure to verify the alias key ```upload``` for the release builds.
   
 
-```json
+```zsh
 keytool -genkey -v -keystore path\upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 ```
 >[!IMPORTANT]
 >After the ```KeyStore.jks``` file is created make sure to create another important file named **key.properties** to make the required `info` about key store available to the SDK.
 
 ### key.properties
-```json
+```zsh
     storePassword=your_keystore_password
     keyPassword=your_alias_password
     storeFile=upload-keystore.jks
