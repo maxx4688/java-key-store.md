@@ -1,44 +1,30 @@
-# This comes with a hashtag before the sentence
-
-## Double hashtag results this
-
-The registration - Just a simple sentence without any addition
-
-1. The first line.
-2. The second line.
-3. The third line.
-4. Just like this you can add multiple lines of texts like a bulletlist
-
-# Let's see an example  
-**Note-1** : The `Text` and `text1` with default text can be also used respectively.
-- This is just a normal sentence started with a hyphon to mark as bulletlist **This with two stars start & end**(http status code: 400):
-
-## Title - a syntax presentation docs.
-
-- Methods: `this.method`
-- Request endPoint: `this.endPoint`
-- Res.body:
+# SHA-1 key
+>To generate the **SHA-1** Key, locate to the project file and then open the terminal in the ```root location```.
 
 ```json
-{
-  "Method added": ["add1", "add2", "add3", "add4"]
-}
+keytool -list -v -keystore path to\upload-keystore.jks -alias upload
 ```
-# Let's try  another example
+---
+# KeyStore.jks
+>To generate the ```upload-keystore.jks``` file
+- Run the command below to generate the java key store file.
+- Make sure to verify the alias key ```upload``` for the release builds.
+  
 
-- with a hyfen this could be a bulletlist
-- And now you can easily define: `a text`
-
-- Just using the backquote three times results simple format with white colour
-```
-{
-  "call": ["man", "horse", "Cat"]
-}
-```
-- Whereas adding `any code format` after the backquote results coloured snippet of that same programming language.
 ```json
-{
-  "call": ["man", "horse", "Cat"]
-}
+keytool -genkey -v -keystore path\upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+```
+>[!IMPORTANT]
+>After the ```KeyStore.jks``` file is created make sure to create another important file named **key.properties** to make the required `info` about key store available to the SDK.
+
+### key.properties
+```json
+    storePassword=your_keystore_password
+    keyPassword=your_alias_password
+    storeFile=upload-keystore.jks
+    keyAlias=upload
 ```
 
+- [x] Paste these in that `key.properties` file and then fill it with appropriate details.
+
+Also check if your current project needs some additional changes to perform in order to integrate the **Java Key Store**.
