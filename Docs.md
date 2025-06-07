@@ -1,7 +1,7 @@
 # SHA-1 key
 >To generate the **SHA-1** Key, locate to the project file and then open the terminal in the ```root location```.
 
-```json
+```zsh
 keytool -list -v -keystore path to\upload-keystore.jks -alias upload
 ```
 ---
